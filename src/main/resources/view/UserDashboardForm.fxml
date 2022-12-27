@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pneDashboard" focusTraversable="true" prefHeight="481.0" prefWidth="708.0" stylesheets="@../css/dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashboardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="231.0" layoutY="28.0" text="DASHBOARD" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Ubuntu Bold" size="41.0" />
+         </font>
+      </Label>
+      <FlowPane alignment="CENTER" layoutX="66.0" layoutY="104.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox fx:id="card" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <children>
+                  <ImageView fx:id="imgQR" fitHeight="179.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/qr-code.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="102.0" prefWidth="421.0" spacing="10.0">
+                     <children>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="85.0" text="Quota :">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblQuota" prefHeight="19.0" text="16 L (Weekly)" textFill="#04a0e8">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="85.0" text="Name : ">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblName" prefHeight="19.0" text="Kasun Sandanuwan">
+                                 <font>
+                                    <Font name="Ubuntu" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="85.0" text="NIC :">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblNIC" prefHeight="19.0" text="841234567V">
+                                 <font>
+                                    <Font name="Ubuntu" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="85.0" text="Address :">
+                                 <font>
+                                    <Font name="Ubuntu Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblAddress" prefHeight="19.0" text="#551, Galle Road, Panadura">
+                                 <font>
+                                    <Font name="Ubuntu" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" layoutX="-5.0" layoutY="345.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <Button fx:id="btnDownload" contentDisplay="RIGHT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#btnDownloadOnAction" prefHeight="47.0" prefWidth="200.0" text="DOWNLOAD">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/download.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPrint" contentDisplay="RIGHT" graphicTextGap="68.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="47.0" prefWidth="200.0" text="PRINT">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogOut" contentDisplay="RIGHT" graphicTextGap="45.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="47.0" prefWidth="200.0" text="LOG OUT">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="pneRegisterForm" prefHeight="514.0" prefWidth="760.0" stylesheets="@../css/register-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="28.0" prefHeight="16.0" prefWidth="435.0" text="REGISTRATION" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Ubuntu Bold" size="41.0" />
+         </font></Label>
+      <FlowPane alignment="CENTER" hgap="10.0" layoutX="106.0" layoutY="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Already have an account?">
+               <font>
+                  <Font name="Ubuntu" size="21.0" />
+               </font>
+            </Label>
+            <Label id="btnLoginHere" onMouseClicked="#lblLoginOnMouseClicked" text="Login Here">
+               <font>
+                  <Font name="Ubuntu Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </FlowPane>
+      <Label layoutX="22.0" layoutY="133.0" text="Personal Details" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="133.0">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="22.0" layoutY="157.0" prefHeight="6.0" prefWidth="716.0" style="-fx-background-color: rgb(0,255,0);" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" />
+      <TextFlow layoutX="22.0" layoutY="183.0" prefHeight="19.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NIC Number ">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextField fx:id="txtNIC" layoutX="22.0" layoutY="213.0" prefHeight="26.0" prefWidth="716.0" promptText="Ex: 123456789V" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0">
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblNicStatus" layoutX="24.0" layoutY="249.0" text="Please enter valid NIC Number to proceed">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <HBox layoutX="22.0" layoutY="279.0" spacing="20.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0">
+         <children>
+            <AnchorPane prefHeight="61.0" prefWidth="343.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextFlow prefHeight="19.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name ">
+                           <font>
+                              <Font name="Ubuntu" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                           <font>
+                              <Font name="Ubuntu" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextField fx:id="txtFirstName" disable="true" layoutY="30.0" prefHeight="26.0" prefWidth="716.0" promptText="Ex: Saman" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Ubuntu" size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="61.0" prefWidth="343.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextFlow prefHeight="19.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name ">
+                           <font>
+                              <Font name="Ubuntu" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextField fx:id="txtLastName" disable="true" layoutY="30.0" prefHeight="26.0" prefWidth="716.0" promptText="Ex: Perera" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Ubuntu" size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <TextFlow layoutX="22.0" layoutY="360.0" prefHeight="19.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address ">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextField fx:id="txtAddress" disable="true" layoutX="22.0" layoutY="390.0" prefHeight="26.0" prefWidth="716.0" promptText="Ex: 398/8, Station Road, Colombo" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0">
+         <font>
+            <Font name="Ubuntu" size="16.0" />
+         </font>
+      </TextField>
+      <Button id="btnRegister" fx:id="btnRegister" defaultButton="true" disable="true" layoutX="21.0" layoutY="445.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="47.0" prefWidth="142.0" text="Register" AnchorPane.leftAnchor="22.0">
+         <font>
+            <Font name="Ubuntu Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

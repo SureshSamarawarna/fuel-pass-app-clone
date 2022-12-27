@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="345.0" prefWidth="550.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="58.0" prefHeight="285.0" prefWidth="521.0" style="-fx-background-color: white;">
+         <children>
+            <Circle fill="WHITE" layoutX="90.0" layoutY="61.0" radius="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="60.0" fitWidth="189.0" layoutX="40.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="135.0" fitWidth="125.0" layoutX="27.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gas-station.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="173.0" layoutY="50.0" text="National Fuel Pass App">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="85.0" text="v0.1.0" />
+            <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="390.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cpc-logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="467.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../image/ioc-logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblStatus" layoutX="176.0" layoutY="120.0" prefHeight="16.0" prefWidth="332.0" text="Welcome to National Fuel Pass App..!" />
+            <Rectangle fx:id="pgbContainer" fill="DODGERBLUE" height="7.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="540.0" />
+            <Rectangle fx:id="pgbLoad" fill="#7cda77" height="7.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Line endX="376.0" layoutX="135.0" layoutY="165.0" opacity="0.45" startX="-100.0">
+               <effect>
+                  <Shadow />
+               </effect>
+            </Line>
+         </children>
+         <effect>
+            <DropShadow color="#0000004d" height="10.5" radius="4.4025" spread="0.17" width="9.11" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="670.0" prefWidth="1054.0" style="-fx-background-color: white;" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="315.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane id="imgContainer" fx:id="pneLogin" focusTraversable="true" layoutX="663.0" layoutY="22.0" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked" AnchorPane.rightAnchor="23.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="74.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/shield.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pneContainer" layoutX="8.0" layoutY="111.0" prefHeight="398.0" prefWidth="1040.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0" />
+      <HBox layoutX="137.0" layoutY="640.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/cpc-logo-small.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="57.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/ijse-logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="57.0" layoutX="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/ioc-logo-small.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </AnchorPane>
+            <HBox spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" text="v0.1.0">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label text="Copyright © 2022 DEP-9 All Rights Reserved. This project is licensed under the MIT license.">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

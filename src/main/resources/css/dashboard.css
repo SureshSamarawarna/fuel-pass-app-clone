@@ -1,0 +1,33 @@
+.button{
+    -fx-font-family: Ubuntu;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-color: rgb(0, 178, 255);
+    -fx-font-size: 21px;
+}
+
+#btnDownload{
+    -fx-background-color: #3dff05;
+}
+
+#btnDownload:hover{
+    -fx-background-color: rgba(61, 255, 5, 0.8);
+}
+
+#btnPrint{
+    -fx-background-color: #170000;
+    -fx-text-fill: white;
+}
+
+#btnPrint:hover{
+    -fx-background-color: rgba(23, 0, 0, 0.8);
+    -fx-text-fill: white;
+}
+
+#btnLogOut{
+    -fx-background-color: #ff9600;
+}
+
+#btnLogOut:hover{
+    -fx-background-color: rgba(255, 150, 0, 0.8);
+}
